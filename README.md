@@ -1,4 +1,4 @@
-# Dogethereum Agents
+# Sysethereum Agents
 
 A set of agents:
 - Doge superblock submitter (DogeToEthClient.java): Sends doge superblocks.
@@ -8,7 +8,7 @@ A set of agents:
 - Operator agent (EthToDogeClient.java): Signs and broadcasts doge unlock txs
 - Oracle agent (PriceOracleClient.java): Informs the doge/eth price to DogeToken
 
-If you are new to the Dogecoin <-> Ethereum bridge, please check the [docs](https://github.com/dogethereum/docs) repository first.
+If you are new to the Dogecoin <-> Ethereum bridge, please check the [docs](https://github.com/sysethereum/docs) repository first.
 
 ## Development
 
@@ -21,7 +21,7 @@ If you are new to the Dogecoin <-> Ethereum bridge, please check the [docs](http
 ### Run ganache
 > ganache -l GAS_LIMIT -p 8545
 - Replace GAS_LIMIT with the value used in the configuration file
-- deploy https://github.com/dogethereum/dogethereum-contracts contracts to ganache
+- deploy https://github.com/sysethereum/sysethereum-contracts contracts to ganache
 - run scripts/init_contracts_regtest.js 
 
 
@@ -38,18 +38,18 @@ If you are new to the Dogecoin <-> Ethereum bridge, please check the [docs](http
 - Open IntelliJ IDEA
 - Import project as Maven
 - Configuration file
-  - Create a custom configuration file by making a copy of the sample configuration file dogethereum-agents/src/main/resources/dogethereum-agents.sample.conf and place it anywhere you want, e.g. /home/yourUser/dogethereum-agents.conf
+  - Create a custom configuration file by making a copy of the sample configuration file sysethereum-agents/src/main/resources/sysethereum-agents.sample.conf and place it anywhere you want, e.g. /home/yourUser/sysethereum-agents.conf
   - Edit these entries to point to your computer paths
     - truffle.build.contracts.directory
     - data.directory
     - operator.private.key.file.path
-  - Note: On windows paths have to be between "" and with a double backslash \\ as separator. E.g. data.directory = "D:\\dogethereum-agents\\storage\\data"  
+  - Note: On windows paths have to be between "" and with a double backslash \\ as separator. E.g. data.directory = "D:\\sysethereum-agents\\storage\\data"  
 - Create Run configuration
   - In Run/Edit Configurations... add a new "Application" configuration
   - Set parameters like this
     - Name: Main local
-    - Main class: "org.dogethereum.agents.Main"
-    - VM options: -Ddogethereum.agents.conf.file=path_to_configuration_file_copy
+    - Main class: "org.sysethereum.agents.Main"
+    - VM options: -Dsysethereum.agents.conf.file=path_to_configuration_file_copy
   - Note: On windows paths have to use the double backslash as separator.
 
 
