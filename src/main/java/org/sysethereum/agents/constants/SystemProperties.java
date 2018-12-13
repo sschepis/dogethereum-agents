@@ -153,11 +153,11 @@ public class SystemProperties {
     }
 
     public boolean isDogeSuperblockSubmitterEnabled() {
-        return getBooleanProperty("doge.superblock.submitter.enabled", false);
+        return getBooleanProperty("sys.superblock.submitter.enabled", false);
     }
 
     public boolean isDogeTxRelayerEnabled() {
-        return getBooleanProperty("doge.tx.relayer.enabled", false);
+        return getBooleanProperty("sys.tx.relayer.enabled", false);
     }
 
     public boolean isOperatorEnabled() {
@@ -169,7 +169,7 @@ public class SystemProperties {
     }
 
     public boolean isDogeBlockChallengerEnabled() {
-        return getBooleanProperty("doge.superblock.challenger.enabled", false);
+        return getBooleanProperty("sys.superblock.challenger.enabled", false);
     }
 
     public boolean isGanache() {
@@ -195,7 +195,7 @@ public class SystemProperties {
     }
 
     public String dogeSuperblockChallengerAddress() {
-        return getStringProperty("doge.superblock.challenger.address", null);
+        return getStringProperty("sys.superblock.challenger.address", null);
     }
 
     public String relayTxsAddress() {

@@ -43,7 +43,7 @@ public class PriceOracleClient {
     public void setup() throws Exception {
         config = SystemProperties.CONFIG;
         if (config.isPriceOracleEnabled()) {
-            new Timer("Oracle update doge-eth price").scheduleAtFixedRate(new UpdateDogeEthPriceTimerTask(), getFirstExecutionDate(), config.getAgentConstants().getPriceOracleTimerTaskPeriod());
+            new Timer("Oracle update sys-eth price").scheduleAtFixedRate(new UpdateDogeEthPriceTimerTask(), getFirstExecutionDate(), config.getAgentConstants().getPriceOracleTimerTaskPeriod());
         }
     }
 
@@ -55,7 +55,7 @@ public class PriceOracleClient {
 
 
     public long getCoinmarketcapPrice() {
-        String baseUrl = "https://api.coinmarketcap.com/v1/ticker/dogecoin/?convert=ETH";
+        String baseUrl = "https://api.coinmarketcap.com/v1/ticker/syscoin/?convert=ETH";
 
         Client client = ClientBuilder.newClient();
         ObjectMapper mapper = new ObjectMapper();

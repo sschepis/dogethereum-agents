@@ -5,7 +5,7 @@ import org.bitcoinj.core.AltcoinBlock;
 import org.bitcoinj.core.StoredBlock;
 import org.bitcoinj.store.BlockStoreException;
 import org.bitcoinj.core.Sha256Hash;
-import org.sysethereum.agents.core.dogecoin.*;
+import org.sysethereum.agents.core.syscoin.*;
 import org.sysethereum.agents.core.eth.EthWrapper;
 import org.springframework.stereotype.Service;
 

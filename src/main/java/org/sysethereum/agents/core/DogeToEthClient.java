@@ -5,14 +5,14 @@
 package org.sysethereum.agents.core;
 
 
-import org.sysethereum.agents.core.dogecoin.*;
+import org.sysethereum.agents.core.syscoin.*;
 import lombok.extern.slf4j.Slf4j;
 import org.bitcoinj.core.*;
 import org.bitcoinj.store.BlockStoreException;
 import org.sysethereum.agents.constants.AgentConstants;
 import org.sysethereum.agents.constants.SystemProperties;
-import org.sysethereum.agents.core.dogecoin.DogecoinWrapper;
-import org.sysethereum.agents.core.dogecoin.Proof;
+import org.sysethereum.agents.core.syscoin.DogecoinWrapper;
+import org.sysethereum.agents.core.syscoin.Proof;
 import org.sysethereum.agents.core.eth.EthWrapper;
 import org.sysethereum.agents.util.OperatorPublicKeyHandler;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ import java.util.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
- * Manages the process of informing Sysethereum Contracts news about the dogecoin blockchain
+ * Manages the process of informing Sysethereum Contracts news about the syscoin blockchain
  * @author Oscar Guindzberg
  * @author Catalina Juarros
  */

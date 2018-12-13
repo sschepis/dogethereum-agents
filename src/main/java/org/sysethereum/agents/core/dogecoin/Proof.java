@@ -2,17 +2,17 @@
  * Copyright (C) 2017 RSK Labs Ltd.
  * Copyright (C) 2018 Coinfabrik and Oscar Guindzberg.
  */
-package org.sysethereum.agents.core.dogecoin;
+package org.sysethereum.agents.core.syscoin;
 
 
 import lombok.EqualsAndHashCode;
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.core.PartialMerkleTree;
 import org.bitcoinj.core.Sha256Hash;
-import org.libdohj.params.AbstractDogecoinParams;
-import org.libdohj.params.DogecoinMainNetParams;
-import org.libdohj.params.DogecoinRegTestParams;
-import org.libdohj.params.DogecoinTestNet3Params;
+import org.libsyshj.params.AbstractDogecoinParams;
+import org.libsyshj.params.DogecoinMainNetParams;
+import org.libsyshj.params.DogecoinRegTestParams;
+import org.libsyshj.params.DogecoinTestNet3Params;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

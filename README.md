@@ -1,12 +1,12 @@
 # Sysethereum Agents
 
 A set of agents:
-- Doge superblock submitter (DogeToEthClient.java): Sends doge superblocks.
+- Doge superblock submitter (DogeToEthClient.java): Sends sys superblocks.
 - Superblock challenger (SuperblockChainClient.java): Challenges invalid superblocks sent by rogue submitters.
 - Superblock defender  (SuperblockDefenderClient.java): Replies to challenges made by rogue challengers.
-- Doge tx submitter (DogeToEthClient.java): Sends doge lock and unlock txs so they are validated and relayed to DogeToken ERC20 contract.
-- Operator agent (EthToDogeClient.java): Signs and broadcasts doge unlock txs
-- Oracle agent (PriceOracleClient.java): Informs the doge/eth price to DogeToken
+- Doge tx submitter (DogeToEthClient.java): Sends sys lock and unlock txs so they are validated and relayed to DogeToken ERC20 contract.
+- Operator agent (EthToDogeClient.java): Signs and broadcasts sys unlock txs
+- Oracle agent (PriceOracleClient.java): Informs the sys/eth price to DogeToken
 
 If you are new to the Dogecoin <-> Ethereum bridge, please check the [docs](https://github.com/sysethereum/docs) repository first.
 
@@ -25,10 +25,10 @@ If you are new to the Dogecoin <-> Ethereum bridge, please check the [docs](http
 - run scripts/init_contracts_regtest.js 
 
 
-### Run dogecoin
--  Start the dogecoin node in regtest mode
+### Run syscoin
+-  Start the syscoin node in regtest mode
 > dogecoind -rpcport=22220 -regtest -rpcuser=RPCUSER -rpcpassword=RPCPASS -datadir=DATADIR
-- Mine 1 doge block to "wake up" the dogecoin node in regtest mode
+- Mine 1 sys block to "wake up" the syscoin node in regtest mode
 - To verify it is working 
 > dogecoind -rpcport=22220 -regtest -rpcuser=RPCUSER -rpcpassword=RPCPASS -datadir=DATADIR getinfo
 

@@ -1,4 +1,4 @@
-package org.sysethereum.agents.core.dogecoin;
+package org.sysethereum.agents.core.syscoin;
 
 import lombok.extern.slf4j.Slf4j;
 

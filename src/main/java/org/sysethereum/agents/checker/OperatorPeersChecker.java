@@ -19,7 +19,7 @@ import java.util.List;
 @Component
 @Slf4j(topic = "OperatorPeersChecker")
 /**
- * Makes sure the dogecoin peer is up. Otherwise prevents the agent from starting (fail fast strategy)
+ * Makes sure the syscoin peer is up. Otherwise prevents the agent from starting (fail fast strategy)
  */
 public class OperatorPeersChecker {
 

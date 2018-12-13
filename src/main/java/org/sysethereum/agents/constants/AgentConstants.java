@@ -1,14 +1,14 @@
 package org.sysethereum.agents.constants;
 
 import org.bitcoinj.core.Coin;
-import org.sysethereum.agents.core.dogecoin.Superblock;
-import org.libdohj.params.AbstractDogecoinParams;
+import org.sysethereum.agents.core.syscoin.Superblock;
+import org.libsyshj.params.AbstractDogecoinParams;
 
 import java.math.BigInteger;
 
 /**
  * Agent and Bridge constants.
- * Subclasses are customizations for each network (doge regtest and eth ganache, doge mainnet and eth rinkeby, doge mainnet and eth prod)
+ * Subclasses are customizations for each network (sys regtest and eth ganache, sys mainnet and eth rinkeby, sys mainnet and eth prod)
  */
 public class AgentConstants {
 

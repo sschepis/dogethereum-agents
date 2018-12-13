@@ -1,4 +1,4 @@
-package org.sysethereum.agents.core.dogecoin;
+package org.sysethereum.agents.core.syscoin;
 
 import org.bitcoinj.core.Block;
 import org.bitcoinj.core.UnsafeByteArrayOutputStream;

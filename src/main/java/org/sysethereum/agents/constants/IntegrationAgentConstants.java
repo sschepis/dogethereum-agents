@@ -2,10 +2,10 @@ package org.sysethereum.agents.constants;
 
 import org.bitcoinj.core.Coin;
 import org.bitcoinj.core.Sha256Hash;
-import org.sysethereum.agents.core.dogecoin.Keccak256Hash;
-import org.sysethereum.agents.core.dogecoin.Superblock;
-import org.sysethereum.agents.core.dogecoin.SuperblockUtils;
-import org.libdohj.params.DogecoinMainNetParams;
+import org.sysethereum.agents.core.syscoin.Keccak256Hash;
+import org.sysethereum.agents.core.syscoin.Superblock;
+import org.sysethereum.agents.core.syscoin.SuperblockUtils;
+import org.libsyshj.params.DogecoinMainNetParams;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,9 +31,9 @@ public class IntegrationAgentConstants extends AgentConstants {
 
         dogeToEthTimerTaskPeriod = 15 * 1000;
         dogeToEthConfirmations = 2;
-        minimumLockTxValue = Coin.valueOf(300000000); // 3 doge
+        minimumLockTxValue = Coin.valueOf(300000000); // 3 sys
 
-        // Genesis Superblock for doge mainnet
+        // Genesis Superblock for sys mainnet
         Sha256Hash blocksMerkleRoot = Sha256Hash.wrap("629417921bc4ab79db4a4a02b4d7946a4d0dbc6a3c5bca898dd12eacaeb8b353");
         BigInteger chainWork = new BigInteger("4266257060811936889868");
         long lastDogeBlockTime = 1535743139l;

@@ -1,4 +1,4 @@
-package org.sysethereum.agents.core.dogecoin;
+package org.sysethereum.agents.core.syscoin;
 
 import static org.junit.Assert.*;
 

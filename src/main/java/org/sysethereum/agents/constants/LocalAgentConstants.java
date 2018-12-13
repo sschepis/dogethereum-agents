@@ -3,9 +3,9 @@ package org.sysethereum.agents.constants;
 import com.google.common.collect.Lists;
 import org.bitcoinj.core.Coin;
 import org.bitcoinj.core.Sha256Hash;
-import org.sysethereum.agents.core.dogecoin.Keccak256Hash;
-import org.sysethereum.agents.core.dogecoin.Superblock;
-import org.libdohj.params.DogecoinRegTestParams;
+import org.sysethereum.agents.core.syscoin.Keccak256Hash;
+import org.sysethereum.agents.core.syscoin.Superblock;
+import org.libsyshj.params.DogecoinRegTestParams;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,7 +31,7 @@ public class LocalAgentConstants extends AgentConstants {
 
         dogeToEthTimerTaskPeriod = 10 * 1000;
         dogeToEthConfirmations = 1;
-        minimumLockTxValue = Coin.valueOf(300000000); // 3 doge
+        minimumLockTxValue = Coin.valueOf(300000000); // 3 sys
 
         List<Sha256Hash> genesisSuperblockBlockList = Lists.newArrayList(dogeParams.getGenesisBlock().getHash());
         Keccak256Hash genesisSuperblockParentId = Keccak256Hash.wrap(new byte[32]); // initialised with 0s

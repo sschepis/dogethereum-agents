@@ -1,4 +1,4 @@
-package org.sysethereum.agents.core.dogecoin;
+package org.sysethereum.agents.core.syscoin;
 
 import com.google.common.io.ByteStreams;
 import com.google.common.primitives.*;

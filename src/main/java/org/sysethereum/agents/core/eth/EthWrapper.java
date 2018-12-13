@@ -8,12 +8,12 @@ import org.sysethereum.agents.constants.AgentConstants;
 import org.sysethereum.agents.constants.SystemProperties;
 import org.sysethereum.agents.contract.*;
 
-import org.sysethereum.agents.core.dogecoin.*;
-import org.sysethereum.agents.core.dogecoin.SuperblockUtils;
+import org.sysethereum.agents.core.syscoin.*;
+import org.sysethereum.agents.core.syscoin.SuperblockUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import org.libdohj.core.ScryptHash;
+import org.libsyshj.core.ScryptHash;
 import org.spongycastle.util.encoders.Hex;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -1342,7 +1342,7 @@ public class EthWrapper implements SuperblockConstantProvider {
             throws Exception {
         byte[] dogeBlockHeader = Arrays.copyOfRange(block.bitcoinSerialize(), 0, 80);
         Sha256Hash dogeBlockHash = block.getHash();
-        log.info("About to send to the bridge doge tx hash {}. Block hash {}", tx.getHash(), dogeBlockHash);
+        log.info("About to send to the bridge sys tx hash {}. Block hash {}", tx.getHash(), dogeBlockHash);
 
         byte[] txSerialized = tx.bitcoinSerialize();
 
@@ -1387,9 +1387,9 @@ public class EthWrapper implements SuperblockConstantProvider {
     public void updatePrice(long price) {
         BigInteger priceBI = BigInteger.valueOf(price);
         CompletableFuture<TransactionReceipt> futureReceipt = dogeToken.setDogeEthPrice(priceBI).sendAsync();
-        log.info("Sent update doge-eth price tx. Price: {}", price);
+        log.info("Sent update sys-eth price tx. Price: {}", price);
         futureReceipt.thenAcceptAsync((TransactionReceipt receipt) ->
-                log.info("Update doge-eth price tx receipt {}.", receipt.toString())
+                log.info("Update sys-eth price tx receipt {}.", receipt.toString())
         );
     }
 

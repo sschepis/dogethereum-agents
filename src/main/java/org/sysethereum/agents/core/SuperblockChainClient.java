@@ -6,9 +6,9 @@ import org.bitcoinj.core.StoredBlock;
 import org.bitcoinj.store.BlockStoreException;
 import org.sysethereum.agents.constants.AgentConstants;
 import org.sysethereum.agents.constants.SystemProperties;
-import org.sysethereum.agents.core.dogecoin.DogecoinWrapper;
-import org.sysethereum.agents.core.dogecoin.Superblock;
-import org.sysethereum.agents.core.dogecoin.SuperblockChain;
+import org.sysethereum.agents.core.syscoin.DogecoinWrapper;
+import org.sysethereum.agents.core.syscoin.Superblock;
+import org.sysethereum.agents.core.syscoin.SuperblockChain;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

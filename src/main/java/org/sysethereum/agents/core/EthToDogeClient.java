@@ -4,7 +4,7 @@ package org.sysethereum.agents.core;
 import lombok.extern.slf4j.Slf4j;
 import org.bitcoinj.core.*;
 import org.sysethereum.agents.constants.SystemProperties;
-import org.sysethereum.agents.core.dogecoin.DogecoinWrapper;
+import org.sysethereum.agents.core.syscoin.DogecoinWrapper;
 import org.sysethereum.agents.core.eth.EthWrapper;
 import org.sysethereum.agents.util.OperatorKeyHandler;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * Signs and broadcasts unlock txs on the doge network
+ * Signs and broadcasts unlock txs on the sys network
  * @author Oscar Guindzberg
  * @author Catalina Juarros
  */

@@ -11,7 +11,7 @@ import org.bitcoinj.core.ECKey;
 import org.bitcoinj.script.Script;
 import org.bitcoinj.script.ScriptBuilder;
 import org.sysethereum.agents.constants.SystemProperties;
-import org.libdohj.params.AbstractDogecoinParams;
+import org.libsyshj.params.AbstractDogecoinParams;
 import org.spongycastle.util.encoders.Hex;
 import org.springframework.stereotype.Component;
 

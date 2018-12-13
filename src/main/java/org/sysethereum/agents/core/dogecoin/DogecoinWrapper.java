@@ -2,7 +2,7 @@
  * Copyright (C) 2017 RSK Labs Ltd.
  * Copyright (C) 2018 Coinfabrik and Oscar Guindzberg.
  */
-package org.sysethereum.agents.core.dogecoin;
+package org.sysethereum.agents.core.syscoin;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -90,7 +90,7 @@ public class DogecoinWrapper {
                 Wallet wallet = super.createWallet();
                 if (walletEnabled) {
                     Address address = operatorPublicKeyHandler.getAddress();
-                    // Be notified when we receive doge so we call registerTransaction()
+                    // Be notified when we receive sys so we call registerTransaction()
                     wallet.addWatchedAddress(address, operatorPublicKeyHandler.getAddressCreationTime());
                 }
                 return wallet;
@@ -113,7 +113,7 @@ public class DogecoinWrapper {
             }
         };
 
-        // TODO: Make the dogecoin peer list configurable
+        // TODO: Make the syscoin peer list configurable
         // if (!peerAddresses.isEmpty()) {
         //    kit.setPeerNodes(peerAddresses.toArray(new PeerAddress[]{}));
         //}

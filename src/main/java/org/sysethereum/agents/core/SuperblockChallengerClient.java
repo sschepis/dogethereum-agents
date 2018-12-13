@@ -3,9 +3,9 @@ package org.sysethereum.agents.core;
 import lombok.extern.slf4j.Slf4j;
 import org.bitcoinj.core.Sha256Hash;
 import org.sysethereum.agents.core.eth.EthWrapper;
-import org.sysethereum.agents.core.dogecoin.Keccak256Hash;
-import org.sysethereum.agents.core.dogecoin.Superblock;
-import org.libdohj.core.Utils;
+import org.sysethereum.agents.core.syscoin.Keccak256Hash;
+import org.sysethereum.agents.core.syscoin.Superblock;
+import org.libsyshj.core.Utils;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
