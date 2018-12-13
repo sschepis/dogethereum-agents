@@ -28,3 +28,7 @@ defenderstorage/
 challengerstorage/
 maliciousstorage/
 fakesubmitterstorage/
+
+out/
+
+dogethereum-agents.conf

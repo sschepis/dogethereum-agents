@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.dogethereum</groupId>
-    <artifactId>dogethereum-agents</artifactId>
+    <groupId>org.sysethereum</groupId>
+    <artifactId>sysethereum-agents</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.dogethereum.agents.Main</mainClass>
+                            <mainClass>org.sysethereum.agents.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -37,9 +37,9 @@
             <version>5.0.2.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>org.libdohj</groupId>
-            <artifactId>libdohj-core</artifactId>
-            <version>0.14-dogethereum-3</version>
+            <groupId>org.libsyshj</groupId>
+            <artifactId>libsyshj-core</artifactId>
+            <version>0.14-sysethereum-3</version>
         </dependency>
         <dependency>
             <groupId>org.web3j</groupId>
@@ -110,9 +110,9 @@
 
     <repositories>
         <repository>
-            <id>dogethereumGithub</id>
-            <name>Dogethereum Github</name>
-            <url>https://raw.github.com/dogethereum/maven-repo/master/</url>
+            <id>sysethereumGithub</id>
+            <name>Sysethereum Github</name>
+            <url>https://raw.github.com/sschepis/sysethereum-maven-repo/master/</url>
         </repository>
     </repositories>
 </project>
